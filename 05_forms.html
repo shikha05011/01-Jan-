@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend><mark>Demo Form</mark></legend>
+            
+        <!-- Text -->
+        <label for="Name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Name" required value="ABC" readonly> <br><br>
+
+        <!-- Email -->
+        <label for="Email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Email" required size="40"> <br><br>
+
+        <!-- Password -->
+        <label for="Password">Password:</label>
+        <input type="password" name="password" id="email" placeholder="Password" required> <br><br>
+        
+        <!-- Radio Buttons -->
+        <label for="Choose">Choose your favorite Web Language:</label>
+
+        <input type="radio" name="fav_lang" id="" value="HTML">
+        <label for="HTML">HTML: </label>
+
+        <input type="radio" name="fav_lang" id="" value="CSS">
+        <label for="CSS">CSS: </label>
+
+        <input type="radio" name="fav_lang" id="" value="JavaScript">
+        <label for="JavaScript">JavaScript: </label><br><br>
+        
+        <!-- CheckBoxes -->
+        <label for="Colors:">Select your fav colors: </label>
+
+        <input type="checkbox" name="color1" id="" value="Red">
+        <label for="Red">Red</label>
+
+        <input type="checkbox" name="color2" id="" value="Green">
+        <label for="Green">Green</label>
+
+        <input type="checkbox" name="color3" id="" value="Blue">
+        <label for="Blue">Blue</label>
+
+        <input type="checkbox" name="color4" id="" value="White">
+        <label for="White">White</label><br><br>
+
+        <!-- Colors -->
+        <label for="colors">Select a color: </label>
+        <input type="color" name="colors" id="" disabled><br><br>
+
+        <!-- Date  -->
+        <label for="DOB">D. O. B: </label>
+        <input type="date" name="DOB" id="">
+
+        <label for="datemax">Enter a date before 2002-01-01: </label>
+        <input type="date" name="datemax" id="" max="2001-10-31"><br><br>
+
+        <!-- Date Time Local -->
+        <label for="datetime">Enter a date and time: </label>
+        <input type="datetime-local" name="datetime" id=""> <br><br>
+
+        <!-- Image -->
+        <label for="Image:">Image: </label>
+        <input type="image" src="Tree.jpg" alt="Tree pic" width="50" height="50"> <br><br>
+
+        <!-- File -->
+        <label for="File:">Select a File: </label>
+        <input type="file" name="file" id="" multiple> <br><br>
+
+        <!-- Number -->
+        <label for="Age">Enter your age: </label>
+        <input type="number" name="Age" id="" min="18" max="20">
+
+        <!-- Tel -->
+        <label for="phone">Enter your phone number: </label>
+        <input type="tel" name="phone" id="" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" placeholder="133-2460-456"><br><br>
+
+        <!-- Select -->
+        <label for="Languages">Web Languages: </label>
+
+        <select name="lang" id="" size="3" multiple>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="React">React</option>
+            <option value="Bootstrap">Bootstrap</option>
+            <option value="Node JS">Node JS</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+         <label for="Address">Address: </label>
+         <textarea name="address" id="" rows="10" cols="30"></textarea><br><br>
+
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button disabled="disabled">Disabled</button>
+    </fieldset>
+    </form>
+</body>
+</html>
